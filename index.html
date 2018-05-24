@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Winnie Mach</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <nav>
+          <div class="menu-icon">
+            <!-- <i class="fa far-bars fa-2x"></i> -->
+            <img src="images/menu-icon.png" alt="hamburger icon">
+          </div>
+          <div class="logo">WINNIE MACH</div>
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="inner">
+          <div class="headings">
+            <h1 class="animated bounceInUp">I'm Winnie</h1>
+            <h3 class="animated bounceInUp delay">Coder || Thinker || Designer</h3>
+            <!-- <h3 class="animated bounceInUp delay">Gamer || Talker || Sleeper</h3> -->
+          </div>
+        </div>
+      </header>
+      <section class="content">
+        <div id="about">
+          <h2>About</h2>
+          <p>An aspiring junior web developer with a background in 3D animation. A word I always say is "wow" so my goal is to make cool things that can make others go "wow".</p>
+          <p>I have a passionate interest in all things techie without being nerdy. Can repair phones, build my own computers, an avid computer gamer and love trying to figure out weird and wacky problems. </p>
+          <p>Currently at General Assembly trying to figure the ins and outs of web development. I have been extremely amused over everything I've had the opportunity to learn, explore and lay my hands on (I've already lost count of amount of times I've suddenly wowed in the middle of class)! Check out the stuff I've made and feel free to hit me up! </p>
+          <h4>Skills:</h4>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>jQuery</li>
+              <li>ASDF</li>
+              <li>SDFSD</li>
+            </ul>
+        </div>
+        <!-- MODALS  -->
+        <div id="project00" class="modal-overlay">
+          <div class="modal">
+              <h1>Project 0: Tic Tac Toe</h1>
+              <p>My very first coding project. It was a first of a lot of things for me, from combining my newly learnt skills together to using my first css plugin called Animate CSS.</p>
+              <!-- TODO: Add Test Account Details  -->
+              <a href="https://winnie-mach.github.io/project0/" target="_blank">Live Demo</a> || <a href="https://github.com/winnie-mach/project0" target="_blank">View Code</a>
+              <div class="description">
+              <div class="column">
+              <h3>Features: </h3>
+              <ul>
+                <li>Turn Count</li>
+                <li>Score Count</li>
+                <li>Can't reclick the square if it's already been clicked, an animation will play.</li>
+                <li>Can only click the 'Play Again' button once game is finished.</li>
+              </ul>
+              </div>
+              <div class="column">
+              <h3>Improvements: </h3>
+              <ul>
+                <li>Refactoring the code so the values for the x and o matches aren’t hard coded.</li>
+                <li>Let the users choose their own player tokens.</li>
+                <li>Adding in an AI.</li>
+              </ul>
+              </div>
+            </div>
+              <img src="images/projects/project0_tictactoeWin.png" alt="Tic Tac Toe Win Screenshot"/>
+          </div>
+        </div>
+        <!-- Project 01 -->
+        <div id="project01" class="modal-overlay">
+          <div class="modal">
+              <h1>Project 1: Alumni Network</h1>
+              <p>My first rails application built using a CRUD system. It’s basically an Alumni network where current and past students can share their work with each other and give each other advice.</p>
+              <a href="https://aqueous-ocean-44302.herokuapp.com/" target="_blank">Live Demo</a> || <a href="https://github.com/winnie-mach/project1" target="_blank">View Code</a>
+              <div class="description">
+                <div class="column">
+              <h3>Features: </h3>
+              <ul>
+                <li>Sign Up/Login with validations (cannot access the site without signing up/logging in)</li>
+                <li>Viewing all student works in a gallery</li>
+                <li>Viewing user profiles (current students and alumni) through their works, can’t directly access the student’s profiles without going through their works.</li>
+                <li>Users can edit and delete their own works but cannot edit or delete other users’ works.</li>
+                <li>No users can delete their own profiles, can only edit. (Includes resetting their passwords).</li>
+                <li>Ability to favourite other student’s works, any works they’ve favourited would appear in their own profile as their favourited works. Once it’s been favourited their can’t favourite it again unless it’s been unfavourited. </li>
+                <li>Image uploads with cloudinary.</li>
+              </ul>
+              </div>
+              <div class="column">
+              <h3>Improvements: </h3>
+              <ul>
+                <li>Favourite/Unfavourite toggle button. And a notification telling the user they’ve favourited/unfavourited the piece of work.</li>
+                <li>Background-tileable pattern isn’t showing on Heroku so have to fix that.</li>
+                <li>Would love to add user chat feature or means of communication probably using action cable.</li>
+                <li>Student work categories and tags so can implement a search feature.</li>
+                <li>Job board for students and introduce employers in there so they can look at student works and contact students for potential employment opportunities. </li>
+                <li>Probably an admin account to control the user accounts and permissions.</li>
+                <li>More work on the CSS</li>
+              </ul>
+            </div>
+            </div>
+            <img src="images/projects/project1_alumnetworkGallery.png" alt="Alumni Network Gallery"/>
+          </div>
+        </div>
+        <!-- Project 02-->
+        <div id="project02" class="modal-overlay">
+          <div class="modal">
+              <h1>Project 2: bShare</h1>
+              <p>This is probably the most exciting project by far, it’s a group project where I worked with three other members of my class: Gurdeep, Meena and Ricky.</p>
+              <a href="https://bsharegawdi26.herokuapp.com/" target="_blank">Live Demo</a> || <a href="https://github.com/winnie-mach/bikerental_server" target="_blank">View Code</a>
+              <div class="description">
+                <div class="column">
+              <h3>Features: </h3>
+              <ul>
+                <li>Implemented user permissions on three levels: admin, users and people who aren’t registered </li>
+                <li>Users able to see all of our bike stands and their locations on a map using geolocation.</li>
+                <li>Able to see all of our bikes and whether they are available to rent or not.</li>
+                <li>Able to rent a bike, return a bike and pay with a credit card through Stripe, cost is calculated for them based on the number of hours they’ve rented the bike for.</li>
+                <li>Time/date validations for renting and returning bikes (i.e. can’t rent a bike in the past). </li>
+                <li>We have a bike inventory that tracks which station the bikes are rented and returned to. </li>
+                <li>Users have access to their rental history which is a record of all the bikes that they’ve rented in the past.</li>
+                <li>Users able to edit their profile including name, email and password.</li>
+              </ul>
+              </div>
+              <div class="column">
+              <h3>Improvements: </h3>
+              <ul>
+                <li>At the moment if the user presses the close button on the payments page, it will still register as them having returned the bike. Will probably need a redirect and cancel return if the payment doesn’t go through successfully.</li>
+                <li>Integrate with React.</li>
+                <li>Make the site responsive and accessible.</li>
+                <li>Wanted to implement a bike live tracking feature so being able to see the bike’s locations on a map. Which would possibly mean changing our models around to centre around the bike. We didn’t centre our models and relationships around the bike because we didn’t have a bike or anything else that we could pull data from.</li>
+                <li>Feature for users to report damaged bikes/bikes needing repairs. </li>
+              </ul>
+              </div>
+            </div>
+            <img src="images/projects/project2_bshareRent.png" alt="bShare: Hire a bike"/>
+          </div>
+        </div>
+        <!-- Project 03 -->
+        <div id="project03" class="modal-overlay">
+          <div class="modal">
+              <h1>Project 03</h1>
+              <p>Environmental Simulation Done in THREE.js</p>
+              <a href="https://winnie-mach.github.io/project3/" target="_blank">Live Demo</a> || <a href="https://github.com/winnie-mach/project3" target="_blank">View Code</a>
+            <div class="description">
+              <div class="column"></div>
+              <div class="column"></div>
+            </div>
+            <img src="images/projects/project3_threejs02.png" alt="">
+          </div>
+        </div>
+        <div id="work">
+          <h2>Work</h2>
+          <div class="row">
+          <section class="gallery">
+          		<ul>
+          			<li>
+          				<a href="#project00" id="button00">
+          					<img src="images/projects/project0_tictactoe.png" alt="">
+          				</a>
+          			</li>
+
+          			<li>
+          				<a href="#project01" id="button01">
+          					<img src="images/projects/project1_alumnetworkHome.png" alt="">
+          				</a>
+          			</li>
+
+          			<li>
+          				<a href="#project02" id="button02">
+          					<img src="images/projects/project2_bshareHome.png" alt="">
+          				</a>
+          			</li>
+          			<li>
+          				<a href="#project03" id="button03">
+          					<img src="images/projects/project3_threejs.png" alt="">
+          				</a>
+          			</li>
+          		</ul>
+            </section>
+            </div>
+        </div>
+        <div "contact">
+          <h2>Contact</h2>
+          <p>Email: win.horsley5@gmail.com</p>
+        </div>
+      </section>
+      <footer>
+        <div class="links">
+          <a id="linkedIn" href="https://www.linkedin.com/in/winniemach/" target="_blank"><img src="images/socialIcons/linkedInIconColor.svg" alt="LinkedIn Icon"/></a>
+          <a id="github"href="https://github.com/winnie-mach" target="_blank"><img src="images/socialIcons/githubIconColor.svg" alt="Github Icon"/></a>
+          <a id="facebook"href="https://www.facebook.com/winnie.mach" target="_blank"><img src="images/socialIcons/facebookIconColor.svg" alt="Facebook Icon"/></a>
+          <a id="twitter" href="https://twitter.com/Miss_Winzo" target="_blank"><img src="images/socialIcons/twitterIconColor.svg" alt="Twitter Icon"/></a>
+        </div>
+        <div class="copyright">
+          &copy Winnie 2018
+        </div>
+
+      </footer>
+    </div>
+
+  </body>
+</html>
