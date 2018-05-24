@@ -1,9 +1,4 @@
 node_modules/
 .cache/
 .DS_Store
-indexSpare.html
-indexSpare02.html
-indexSpare01.scss
-indexSpare02.scss
-indexSpare03.scss
 .sass-cache/
