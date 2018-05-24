@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+.DS_Store
+app/indexSpare.html
+app/indexSpare02.html
+app/indexSpare01.scss
+app/indexSpare02.scss
+app/indexSpare03.scss
+app/.sass-cache/
+dist/
+app/scss/
