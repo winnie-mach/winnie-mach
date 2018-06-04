@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
+
+$primary-color: #a32936;
+$secondary-color: #b8606e;
+$off-white: #efe1e9;
+
+
 ///// RESETTING SHIT ////
 
 html, body {
@@ -13,7 +19,9 @@ html, body {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background: url("../images/bg-texture-tileable.png");
+  background-repeat: repeat round;
 }
 
 //// HEADER INCLUDES: LOGO, MENU-ICON(MOB), NAV, HEADINGS ////
@@ -40,7 +48,7 @@ header {
         font-family: 'Yantramanav', sans-serif;
         font-size: 500%;
         font-weight: 100;
-        color: #efe1e9;
+        color: $primary-color;
         line-height: 70%;
         text-transform: lowercase;
       }
@@ -48,7 +56,7 @@ header {
         font-family: 'Montserrat', sans-serif;
         font-size: 100%;
         font-weight: 400;
-        color: grey;
+        color: $secondary-color;
         text-transform: uppercase;
       }
     }
@@ -131,6 +139,24 @@ nav.black {
 
 #about {
   padding-bottom: 3%;
+  h2 {
+    color: $primary-color;
+  }
+  h4 {
+    color: $secondary-color;
+  }
+}
+
+#work {
+  h2 {
+    color: $primary-color;
+  }
+}
+
+#contact {
+  h2 {
+    color: $primary-color;
+  }
 }
 
 
@@ -147,7 +173,7 @@ nav.black {
   overflow: auto;
   font-size: 80%;
   .modal {
-    background-color: white;
+    background-color: $off-white;
     margin: 0 auto;
     padding: 2% 5% 5% 5%;
     width: 80%;
@@ -157,6 +183,12 @@ nav.black {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    h1 {
+      color: $primary-color;
+    }
+    h3 {
+      color: $secondary-color;
+    }
     .description {
       display: flex;
       .column {

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Winnie Mach</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -157,12 +158,37 @@
         <!-- Project 03 -->
         <div id="project03" class="modal-overlay">
           <div class="modal">
-              <h1>Project 03: 3D Environment </h1>
+              <h1>Project 3: 3D Environment </h1>
               <p>Environmental Simulation Done in THREE.js. I wanted very much to apply some of my existing skills to what I'm doing now. But through some research I've discovered that others would prefer to import models from exisiting 3D applications I took on the challenge to try to 'model' with code. The result is this procedurally generated environment using purely code.</p>
               <a href="https://winnie-mach.github.io/project3/" target="_blank">Live Demo</a> || <a href="https://github.com/winnie-mach/project3" target="_blank">View Code</a>
             <div class="description">
-              <div class="column"></div>
-              <div class="column"></div>
+              <div class="column">
+                <h3>Features:</h3>
+                <ul>
+                  <li>Low Poly Environment generated from primitives</li>
+                  <li>Ground made from a sphere rotating on the x-axis, textured with a tileable texture and a bump map</li>
+                  <li>Rocks were randomly generated in clusters of 1-3 rocks, set at random angles and placed randomly on sphere (required some trigonometry).</li>
+                  <li>Trees were built in a similar way, 4 variations of trees models, in an array, logic would pick a sample from the array and plot them out. Needed to use lat long to plot them out. </li>
+                  <li>Clouds were generated with similar logic. </li>
+                  <li>Sky changes from morning to night and vice versa.</li>
+                  <li>Mountain created from cylinder, with logic to move it's vertices in random angles to create an irregular form.</li>
+                  <li>Three point lighting method to simulate real world outdoor lighting.</li>
+                </ul>
+              </div>
+              <div class="column">
+                <h3>Improvements:</h3>
+                <ul>
+                  <li>Make the lighting change as the sky changes from day to night.</li>
+                  <li>Needed to do more mathematics and trigonometry to get more features working.</li>
+                  <li>Add a hero character/object and make them controllable using mouse/keyboard.</li>
+                  <li>Set hero character on an animation loop. </li>
+                  <li>Set collision for the obstacles (trees and rocks).</li>
+                  <li>Add more animation and moving objects. </li>
+                  <li>Create a bigger environment to explore by generating terrains.</li>
+                  <li>Experiment with more advanced texturing, shading techniques and create custom materials.</li>
+                  <li>Some sort of game, maybe hero shoots at the obstacles? Score? Backend?. </li>
+                </ul>
+              </div>
             </div>
             <img src="images/projects/project3_threejs02.png" alt="">
           </div>
@@ -198,7 +224,7 @@
             </section>
             </div>
         </div>
-        <div "contact">
+        <div id="contact">
           <h2>Contact</h2>
           <p>Email: win.horsley5@gmail.com</p>
         </div>
@@ -211,7 +237,7 @@
           <a id="twitter" href="https://twitter.com/Miss_Winzo" target="_blank"><img src="images/socialIcons/twitterIconColor.svg" alt="Twitter Icon"/></a>
         </div>
         <div class="copyright">
-          &#9734; Made by Winnie 2018 &#9734;
+          &#9734; A work in progress by Winnie &#9734;
         </div>
 
       </footer>
